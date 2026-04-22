@@ -82,6 +82,11 @@ h1, h2, h3, .logo-text {
     align-items: center;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo-text {
     font-size: 1.5rem;
     font-weight: 700;
@@ -156,7 +161,8 @@ h1, h2, h3, .logo-text {
 
 .hero-content {
     max-width: 800px;
-    z-index: 2;
+    z-index: 10;
+    position: relative;
 }
 
 .hero-title {
@@ -230,6 +236,7 @@ h1, h2, h3, .logo-text {
     background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
     border-radius: 50%;
     animation: float 10s infinite alternate ease-in-out;
+    pointer-events: none;
 }
 
 @keyframes float {
@@ -240,6 +247,8 @@ h1, h2, h3, .logo-text {
 /* Sections */
 .section {
     padding: 8rem 0;
+    position: relative;
+    z-index: 2;
 }
 
 .bg-alt {
